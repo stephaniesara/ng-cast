@@ -2,7 +2,10 @@ angular.module('video-player')
 
   .component('search', {
     bindings: {
-      onSearch: '<'
+      onSearch: '<',
+      onToggle: '<',
+      autoplay: '<'
     },
+    
     templateUrl: 'src/templates/search.html'
   });

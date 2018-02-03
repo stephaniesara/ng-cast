@@ -1,12 +1,12 @@
 <div id="app container">
   <nav class="navbar">
-    <div class="col-md-6 col-md-offset-3">
-      <search on-search="$ctrl.getSearchQuery"></search>
+    <div class="col-md-8">
+      <search on-search="$ctrl.getSearchQuery" on-toggle="$ctrl.toggleAutoplay" autoplay="$ctrl.autoplay"></search>
     </div>
   </nav>
   <div class="row">
     <div class="col-md-7">
-      <video-player video="$ctrl.selected"></video-player>
+      <video-player video="$ctrl.selected" autoplay="$ctrl.autoplay"></video-player>
     </div>
     <div class="col-md-5">
       <video-list videos="$ctrl.videos" on-click="$ctrl.onClick"></video-list>
