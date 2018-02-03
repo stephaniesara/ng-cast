@@ -39,7 +39,6 @@ describe('video list', function() {
   });
 
   it('should render 5 video list entry elements when given an array of 5 videos', function() {
-    debugger;
     createVideoListElement({ videos: fakeVideoData }, function(element) {
       expect(element.find('.video-list-entry')).to.have.lengthOf(fakeVideoData.length);
     });
